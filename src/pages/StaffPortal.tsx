@@ -8,7 +8,7 @@ import { Badge } from "@/components/ui/badge";
 import { toast } from "sonner";
 import ApplicationDetailsDialog from "@/components/staff/ApplicationDetailsDialog";
 
-const API_BASE = "http://localhost:5000/api";
+const API_BASE = process.env.PRODUCTION?"https://pulse-connect-eight.vercel.app/api":"http://localhost:5000/api";
 
 interface Application {
   id: string;

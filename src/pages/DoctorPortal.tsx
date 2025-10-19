@@ -14,7 +14,7 @@ import { useNavigate } from "react-router-dom";
 import { toast } from "sonner";
 import DoctorCertificationForm from "@/components/doctor/DoctorCertificationForm";
 
-const API_BASE = "http://localhost:5000/api";
+const API_BASE = process.env.PRODUCTION?"https://pulse-connect-eight.vercel.app/api":"http://localhost:5000/api";
 
 const DoctorPortal = () => {
   const navigate = useNavigate();

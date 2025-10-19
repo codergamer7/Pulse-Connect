@@ -1,5 +1,5 @@
 // ApplicationDetailsDialog.tsx
-const API_BASE = "http://localhost:5000/api";
+const API_BASE = process.env.PRODUCTION?"https://pulse-connect-eight.vercel.app/api":"http://localhost:5000/api";
 import {
   Dialog,
   DialogContent,
